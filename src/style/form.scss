@@ -1,0 +1,108 @@
+div.form-container {
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+
+  background-color: var(--color-primary-container);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+
+  & label {
+    margin-bottom: 4px;
+  }
+
+  & input {
+    height: 40px;
+    width: 25vw;
+    position: relative;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: var(--color-surface-container-highest);
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 12px;
+    outline: none;
+    color: var(--color-on-primary-container);
+
+    border-color: var(--color-outline);
+
+    &:focus-visible {
+      border-color: var(--color-on-primary-container);
+    }
+
+  }
+
+  & input[type="file"] {
+    padding: 12px;
+    width: auto;
+
+    &::file-selector-button {
+      transition: scale 200ms, background-color 200ms, color 200ms;
+
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+
+      background-color: var(--color-primary);
+      border: none;
+
+      color: var(--color-on-primary);
+
+      &:hover {
+        scale: 1.08;
+      }
+    }
+  }
+
+  & input[type="color"] {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    &::-webkit-color-swatch {
+      box-sizing: border-box;
+      margin: 4px;
+      border-radius: 40px;
+    }
+  }
+
+  & select {
+    height: 40px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: var(--color-surface-container-highest);
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 12px;
+    outline: none;
+    color: var(--color-on-primary-container);
+
+    border-color: var(--color-outline);
+  }
+
+  & textarea {
+    min-height: 40px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: var(--color-surface-container-highest);
+    padding: 24px;
+    //padding-right: 24px;
+    margin-bottom: 12px;
+    outline: none;
+    color: var(--color-on-primary-container);
+
+    border-color: var(--color-outline);
+  }
+}
+
+p.error {
+  color: var(--color-error);
+}

@@ -1,0 +1,44 @@
+nav.drawer {
+  width: auto;
+  height: 100%;
+  position: relative;
+
+  border: none;
+  border-radius: 0 40px 40px 0;
+  background-color: var(--color-primary-container);
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      transition: scale 200ms, background-color 200ms, color 200ms;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 40px;
+      margin: 12px 0;
+      padding: 0 24px;
+
+      border: none;
+      border-radius: 20px;
+
+      &._selected {
+        background-color: var(--color-primary);
+        color: var(--color-on-primary);
+      }
+
+      &:hover {
+        scale: 1.08;
+        background-color: var(--color-primary);
+        color: var(--color-on-primary);
+      }
+    }
+  }
+}

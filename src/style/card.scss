@@ -1,0 +1,11 @@
+div.card {
+  display: inline-flex;
+  flex-direction: column;
+
+  border: none;
+  border-radius: 40px;
+  padding: 24px;
+
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}

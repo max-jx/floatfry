@@ -1,0 +1,27 @@
+h2, p {
+  margin: 4px 0;
+}
+
+ul.selectionList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-height: 50vh;
+  list-style-type: none;
+  overflow-y: scroll;
+  gap: 12px;
+  padding: 0;
+}
+ul.selectionList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  margin: 0;
+  padding: 12px 12px;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=productUpload.css.map */

@@ -1,0 +1,66 @@
+h2, p {
+  margin: 4px 0;
+}
+
+ul.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 50vh;
+  list-style-type: none;
+  overflow-y: scroll;
+  gap: 12px;
+  padding: 0;
+}
+ul.list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  margin: 0;
+  padding: 12px 12px;
+  background-color: var(--color-surface-container-low);
+  color: var(--color-on-surface);
+  border-radius: 20px;
+}
+
+ul.displayPhotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+ul.displayPhotos div.displayPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--color-surface-container-low);
+  border: none;
+  border-radius: 20px;
+  padding: 24px;
+}
+ul.displayPhotos div.displayPhoto img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: scale-down;
+  border: none;
+  border-radius: 20px;
+}
+ul.displayPhotos div.displayPhoto p {
+  width: auto;
+  color: var(--color-on-surface);
+}
+ul.displayPhotos div {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+ul.displayPhotos img.displayPhoto {
+  width: 20vw;
+  height: 20vw;
+}
+
+/*# sourceMappingURL=productDetails.css.map */

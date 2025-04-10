@@ -1,0 +1,84 @@
+table {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-on-surface);
+  border-radius: 12px;
+
+  border-spacing: 0;
+
+  & td, & th {
+    padding: 12px;
+    text-align: left;
+    height: 40px;
+  }
+
+  &._editable td:hover{
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+
+  &._editable tr:nth-of-type(even) td:hover {
+    border-radius: 12px;
+    background-color: var(--color-tertiary);
+    color: var(--color-on-tertiary);
+  }
+
+  & tbody tr {
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-on-primary);
+    }
+  }
+
+  & tr:nth-of-type(even) {
+    background-color: var(--color-tertiary-container);
+    color: var(--color-on-tertiary-container);
+
+    &:hover {
+      background-color: var(--color-tertiary);
+      color: var(--color-on-tertiary);
+    }
+  }
+
+  & th, & td {
+    &:first-child {
+      padding-left: 24px;
+    }
+
+    &:last-child {
+      padding-right: 24px;
+    }
+  }
+
+  & tr:first-child th {
+    padding-top: 24px;
+  }
+
+  & tr:last-child td {
+    padding-bottom: 24px;
+  }
+
+  & input {
+    outline: none;
+    //width: fit-content;
+    height: 40px;
+    margin: 4px 24px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: var(--color-outline);
+    background-color: var(--color-surface-container-highest);
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &:focus-visible {
+      border-color: var(--color-on-primary-container);
+    }
+  }
+}

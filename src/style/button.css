@@ -1,0 +1,42 @@
+button {
+  transition: scale 200ms, background-color 200ms, color 200ms;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+button.filled {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-on-primary);
+}
+button.filled:hover {
+  scale: 1.08;
+}
+button.outlined {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--color-tertiary);
+  color: var(--color-tertiary);
+}
+button.outlined:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-on-tertiary);
+}
+button.text {
+  background-color: transparent;
+  border-style: none;
+  color: var(--color-primary);
+}
+button.text:hover {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+button:active {
+  scale: 1.12;
+}
+button.icon {
+  padding: 8px;
+}
+
+/*# sourceMappingURL=button.css.map */

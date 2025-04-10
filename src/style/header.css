@@ -1,0 +1,13 @@
+div.header {
+  margin: 0;
+  padding: 24px;
+  background-color: var(--color-tertiary-container);
+  border: none;
+  border-radius: 40px;
+  margin: 0 24px;
+}
+div.header * {
+  margin: 0;
+}
+
+/*# sourceMappingURL=header.css.map */

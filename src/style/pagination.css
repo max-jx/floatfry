@@ -1,0 +1,15 @@
+div.pagination {
+  height: 40px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: var(--color-surface-container-highest);
+  border-style: solid;
+  border-color: var(--color-outline);
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=pagination.css.map */
